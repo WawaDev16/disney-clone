@@ -42,8 +42,8 @@ function ProductionHouse() {
   return (
     <div className="flex gap-2 md:gap-5 p-2 px-5 md:px-16 ">
       {productionHouseList.map((item) => (
-        // eslint-disable-next-line react/jsx-key
         <div
+          key={item.id}
           className="border-[2px] border-gray-600 rounded-lg hover:scale-110 
         tansition-all duration-300 ease-in-out cursor-pointer relative 
          shadow-xl shadow-gray-800"

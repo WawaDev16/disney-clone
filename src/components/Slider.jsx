@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-key */
 import { useEffect, useRef, useState } from "react";
 import GlobalApi from "../Services/GlobalApi";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi2";
@@ -41,8 +40,9 @@ function Slider() {
         className="flex overflow-x-auto w-full px-16 py-4 scrollbar-none scroll-smooth"
         ref={elementRef}
       >
-        {movieList.map((item, index) => (
+        {movieList.map((item) => (
           <img
+            key={item}
             src={IMAGE_BASE_URL + item.backdrop_path}
             className="min-w-full md:h-[310px] object-cover 
             object-left-top mr-5 rounded-md hover:border-[4px]
