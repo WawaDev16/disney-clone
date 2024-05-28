@@ -19,10 +19,10 @@ function Slider() {
   };
 
   const sliderRight = (element) => {
-    element.scrollLeft += screenWidth - 110;
+    element.scrollLeft += screenWidth - 130;
   };
   const sliderLeft = (element) => {
-    element.scrollLeft -= screenWidth - 110;
+    element.scrollLeft -= screenWidth - 140;
   };
 
   return (
